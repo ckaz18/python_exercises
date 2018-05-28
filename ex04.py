@@ -1,3 +1,4 @@
+from collections import deque
 
 # Append
 app = []
@@ -47,7 +48,27 @@ print('String and num list reversal', srt, srt2)
 srtCop = srt.copy()
 print('Copy', srtCop)
 
+# Deque
+queue = deque(['apples', 'banana', 'peaches', 'clementine'])
+print('Collections queue', queue)
+queue.append('pineapple')
+print('Append to queue', queue)
 
+queue.popleft()
+print('pop left', queue)
 
+# Matrix
+mat = [[1, 2, 3], [3, 4, 5], [5, 6, 7]]
+print('Python Matrix', mat)
 
+# Tuple
+tup = 12, 'tuple', 8, 'banana'
+print(tup, tup[2])
 
+# Sets; don't contain duplicates
+bundle = {'apples', 'oranges', 'kiwis'}
+bundle.add('kiwis')
+print(bundle)
+
+for i in bundle:
+    print(i)
